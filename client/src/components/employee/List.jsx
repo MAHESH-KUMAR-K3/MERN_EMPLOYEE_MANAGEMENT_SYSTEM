@@ -39,7 +39,7 @@ const List = () => {
       setEmp_loading(true);
       try {
         const response = await axios.get(
-          "https://mern-employee-management-system-3.onrender.com/api/employee",
+          "https://mern-employee-management-system-1-jx0q.onrender.com/api/employee",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -57,7 +57,7 @@ const List = () => {
             profileImage: (
               <div className="flex items-center justify-center">
                 <img 
-                  src={`https://mern-employee-management-system-3.onrender.com/uploads/${emp.userId.profileImage}`} 
+                  src={`https://mern-employee-management-system-1-jx0q.onrender.com/uploads/${emp.userId.profileImage}`} 
                   alt={emp.userId.name}
                   className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-gray-200 shadow-md"
                   onError={(e) => {
@@ -66,7 +66,7 @@ const List = () => {
                 />
               </div>
             ),
-            profileImageUrl: `https://mern-employee-management-system-3.onrender.com/uploads/${emp.userId.profileImage}`, // Add direct URL
+            profileImageUrl: `https://mern-employee-management-system-1-jx0q.onrender.com/uploads/${emp.userId.profileImage}`, // Add direct URL
             action: (<EmployeeButtons Id={emp._id} onEmployeeDelete={onEmployeeDelete} />)
           }));
           setEmployees(data);

@@ -74,7 +74,7 @@ const Setting = () => {
       const userId = user._id
       
       const response = await axios.put(
-        "https://mern-employee-management-system-3.onrender.com/api/setting/change-password",
+        "https://mern-employee-management-system-1-jx0q.onrender.com/api/setting/change-password",
         {
           userId,
           oldPassword: passwordData.oldPassword,

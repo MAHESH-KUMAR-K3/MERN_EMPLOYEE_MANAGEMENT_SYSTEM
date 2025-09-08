@@ -25,7 +25,7 @@ export const DepartmentButtons = ({ Id,onDepartmentDelete }) => {
     if(confirm){
         try {
           const response = await axios.delete(
-            `https://mern-employee-management-system-3.onrender.com/api/department/${id}`,
+            `https://mern-employee-management-system-1-jx0q.onrender.com/api/department/${id}`,
             {
               headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`,

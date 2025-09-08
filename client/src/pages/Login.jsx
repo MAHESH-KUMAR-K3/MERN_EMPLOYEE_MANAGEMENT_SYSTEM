@@ -17,7 +17,7 @@ const Login = () => {
     console.log(email, password);
     try {
       const response = await axios.post(
-        "https://mern-employee-management-system-3.onrender.com/api/auth/login",
+        "https://mern-employee-management-system-1-jx0q.onrender.com/api/auth/login",
         { email, password }
       );
 
@@ -62,9 +62,9 @@ const Login = () => {
     
     if (userType === "admin") {
       guestEmail = "admin@gmail.com";
-      guestPassword = "123456";
+      guestPassword = "admin";
     } else if (userType === "employee") {
-      guestEmail = "bhanuprasadsuram0018@gmail.com";
+      guestEmail = "mahesh@gmail.com";
       guestPassword = "123456";
     }
 
@@ -75,7 +75,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "https://mern-employee-management-system-3.onrender.com/api/auth/login",
+        "https://mern-employee-management-system-1-jx0q.onrender.com/api/auth/login",
         { email: guestEmail, password: guestPassword }
       );
 
